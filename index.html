@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- ============================================================
+  FurCare — Home Page
+  A pet care & health management dashboard (frontend only).
+  Navbar, footer, feature cards and stats are rendered by
+  js/script.js from JavaScript data arrays.
+  ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FurCare — the all-in-one pet care and health management companion.">
+  <title>FurCare · Home</title>
+
+  <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar is rendered dynamically by script.js -->
+  <header></header>
+
+  <main>
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" aria-label="Welcome to FurCare">
+      <div class="container">
+        <div class="hero-content reveal visible">
+          <span class="section-eyebrow">Welcome to FurCare</span>
+          <h1>Your Pet's <span class="highlight">Health</span>, All in One Place</h1>
+          <p>
+            Track vaccinations, feeding schedules, vet appointments and wellness
+            milestones for every furry family member — beautifully simple.
+          </p>
+          <div class="hero-actions">
+            <a href="pets.html" class="btn btn-primary">
+              <i class="fa-solid fa-paw"></i> Manage My Pets
+            </a>
+            <a href="calendar.html" class="btn btn-outline">
+              <i class="fa-regular fa-calendar"></i> View Calendar
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num">10k+</div>
+              <div class="stat-label">Happy Pet Parents</div>
+            </div>
+            <div>
+              <div class="stat-num">25k</div>
+              <div class="stat-label">Healthy Pets</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative illustration -->
+        <div class="hero-visual reveal visible">
+          <div class="hero-paw" aria-hidden="true">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+          <div class="hero-float-card card-1">
+            <i class="fa-solid fa-shield-heart"></i> Vaccination due Aug 8
+          </div>
+          <div class="hero-float-card card-2">
+            <i class="fa-solid fa-bowl-food"></i> Feeding at 12:00 PM
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES SECTION ============ -->
+    <section class="section" aria-label="Features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Why FurCare</span>
+          <h2>Everything Your Pets Need to Thrive</h2>
+          <p>
+            Thoughtfully crafted tools that keep your pet's health on track —
+            from daily feeding to long-term wellness.
+          </p>
+        </div>
+
+        <!-- Feature cards injected by renderFeatures() -->
+        <div class="grid grid-4" id="featuresGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ STATISTICS SECTION ============ -->
+    <section class="section section--tight" aria-label="Platform statistics">
+      <div class="container">
+        <!-- Stat cards injected by renderStats() -->
+        <div class="stats-band grid grid-4" id="statsBand"></div>
+      </div>
+    </section>
+
+    <!-- ============ CALL TO ACTION ============ -->
+    <section class="section" aria-label="Get started">
+      <div class="container">
+        <div class="cta-section reveal">
+          <span class="section-eyebrow eyebrow-light">Ready to start?</span>
+          <h2>Give Your Pet the Care They Deserve</h2>
+          <p>
+            Join thousands of pet parents who trust FurCare to keep their best
+            friends happy, healthy and on schedule.
+          </p>
+          <a href="profile.html" class="btn">
+            <i class="fa-solid fa-heart"></i> Create Your Free Profile
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is rendered dynamically by script.js -->
+  <footer></footer>
+
+  <!-- Application script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
